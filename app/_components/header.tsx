@@ -1,11 +1,16 @@
 import Image from "next/image"
+import { Button } from "./ui/button"
+import { MenuIcon } from "lucide-react"
 
-const header = () => {
+const Header = () => {
     return (
         <header className="flex items-center justify-between px-5 py-6"> 
-            <Image src='/logo.svg' alt="Aparatus" width={100} height={100}/>
+            <Image src="/logo.svg" alt="Aparatus" width={100} height={100}/>
+            <Button variant="outline" size="icon">
+                <MenuIcon/>
+            </Button>
         </header>
     )
 }
 
-export default header
+export default Header
